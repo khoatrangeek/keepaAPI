@@ -7,7 +7,6 @@ python setup.py sdist upload -r pypi
 
 """
 from setuptools import setup
-import numpy
 
 setup(
     name='keepaAPI',
@@ -43,9 +42,7 @@ setup(
     url = 'https://github.com/akaszynski/keepaAPI',
 
     keywords='keepa',                    
-
-    include_dirs=[numpy.get_include()],       
-                           
+                 
     # Might work with earlier versions (untested)
     install_requires=['numpy>=1.9.3', 'requests>=2.2']
 
